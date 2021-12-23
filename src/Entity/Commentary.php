@@ -48,6 +48,13 @@ class Commentary
      */
     private $article;
 
+
+    public function __construct()
+    {
+        $this->createAt = new \DateTime();
+    }
+    
+
     public function getId(): ?int
     {
         return $this->id;
